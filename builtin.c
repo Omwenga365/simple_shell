@@ -22,10 +22,6 @@ int _myexit(info_t *info)
 	return (-2);
 }
 
-/**
- * _mycd - changes the current directory of the prototype
- *  Return: Always 0
- */
 int _mycd(info_t *info)
 {
 	char *s, *dir, buffer[1024];
@@ -81,6 +77,6 @@ int _myhelp(info_t *info)
 	arg_array = info->argv;
 	_puts("help call works. Function not yet implemented \n");
 	if (0)
-		_puts(*arg_array); /* temp att_unused workaround */
+		_puts(*arg_array);
 	return (0);
 }
